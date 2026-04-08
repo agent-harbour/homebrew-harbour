@@ -3,6 +3,8 @@ class Harbour < Formula
   homepage "https://github.com/agent-harbour/harbour"
   version "0.1.0"
 
+  depends_on "colima"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/agent-harbour/harbour/releases/download/v0.1.0/harbour-v0.1.0-darwin-arm64.tar.gz"
