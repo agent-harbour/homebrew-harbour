@@ -1,17 +1,17 @@
 class Harbour < Formula
   desc "Run agents across your repos in an isolated Colima VM"
   homepage "https://github.com/agent-harbour/harbour"
-  version "0.2.0"
+  version "0.2.1"
 
   depends_on "colima"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/agent-harbour/harbour/releases/download/v0.2.0/harbour-v0.2.0-darwin-arm64.tar.gz"
-      sha256 "1a680d79d2b36009a046d13befabaeeec8a3109ed6a445742feea78a56202863"
+      url "https://github.com/agent-harbour/harbour/releases/download/v0.2.1/harbour-v0.2.1-darwin-arm64.tar.gz"
+      sha256 "da359188a4065e77b8cee5c6c26823dba4d81051bf835abd8028eccc9e60fd2e"
     else
-      url "https://github.com/agent-harbour/harbour/releases/download/v0.2.0/harbour-v0.2.0-darwin-amd64.tar.gz"
-      sha256 "316b5d2b0eb76a9bb6a38370b2e13679ff05d662400e93bb267bc4d601cf247d"
+      url "https://github.com/agent-harbour/harbour/releases/download/v0.2.1/harbour-v0.2.1-darwin-amd64.tar.gz"
+      sha256 "84c64b22216ee0f54886e20f4362a037ba0155ac9974993157f43ffd5f42d85c"
     end
   end
 
